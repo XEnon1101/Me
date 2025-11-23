@@ -1,1 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XEnon</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/x-icon" class="border-md" href="./blackhole.gif">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        zinc: {
+                            850: '#1f1f22', 
+                            900: '#18181b',
+                            950: '#09090b', 
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-black text-zinc-100 font-sans antialiased selection:bg-white selection:text-black">
+
+    <nav class="fixed w-full z-50 top-0 start-0 border-b border-white/10 bg-black/30 backdrop-blur-md">
+        <div class="max-w-5xl mx-auto flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="#" class="self-center text-xl font-bold tracking-tighter text-white">XEnon.</a>
+            <div class="hidden w-full md:block md:w-auto">
+                <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0">
+                    <li><a href="#about" class="block py-2 px-3 text-sm text-zinc-300 hover:text-white transition-colors">About</a></li>
+                    <li><a href="#academics" class="block py-2 px-3 text-sm text-zinc-300 hover:text-white transition-colors">Academics</a></li>
+                    <li><a href="#projects" class="block py-2 px-3 text-sm text-zinc-300 hover:text-white transition-colors">Projects</a></li>
+                    <li><a href="#contact" class="block py-2 px-3 text-sm text-zinc-300 hover:text-white transition-colors">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        
+        <div class="absolute inset-0 z-0">
+            <video 
+                autoplay 
+                loop 
+                muted 
+                playsinline 
+                class="w-full h-full object-cover scale-105"
+            >
+                <source src="black hole.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+             <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))]"></div>
+        </div>
+
+        <div class="relative z-10 max-w-4xl mx-auto text-center px-4 pt-20">
+            <span class="inline-block py-1 px-3 rounded-full bg-white/10 border border-white/20 text-xs text-zinc-200 mb-6 backdrop-blur-md">
+                Aspiring Computer Science Major
+            </span>
+            
+            <h1 class="text-5xl md:text-8xl font-extrabold tracking-tighter mb-8 text-white drop-shadow-lg">
+                Building the future<br>one line at a time.
+            </h1>
+            
+            <p class="text-lg md:text-xl text-zinc-300 mb-10 max-w-2xl mx-auto leading-relaxed font-light">
+                I am a high school senior based in New York, passionate about AI, mathematics, and sustainable technology.
+            </p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="#academics" class="px-8 py-3 bg-white text-black font-semibold rounded-full hover:bg-zinc-200 transition-all">
+                    View Academics
+                </a>
+                <a href="#projects" class="px-8 py-3 bg-transparent border border-white/30 text-white font-semibold rounded-full hover:bg-white/10 transition-all backdrop-blur-sm">
+                    See Projects
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="academics" class="py-24 bg-black border-t border-zinc-900">
+        <div class="max-w-5xl mx-auto px-4">
+            <h2 class="text-3xl font-bold tracking-tight mb-12 text-white">Academic Highlights</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-zinc-900/50 border border-zinc-800 p-8 rounded-2xl hover:border-zinc-600 transition-colors duration-300">
+                    <h3 class="text-zinc-400 text-sm uppercase tracking-wide mb-2">Weighted GPA</h3>
+                    <p class="text-5xl font-bold text-white">3.9<span class="text-2xl text-zinc-500">/4.0</span></p>
+                </div>
+                <div class="bg-zinc-900/50 border border-zinc-800 p-8 rounded-2xl hover:border-zinc-600 transition-colors duration-300">
+                    <h3 class="text-zinc-400 text-sm uppercase tracking-wide mb-2">SAT Score</h3>
+                    <p class="text-5xl font-bold text-white">1520</p>
+                    <p class="text-sm text-zinc-500 mt-2">Math: 780 | RW: 740</p>
+                </div>
+                <div class="bg-zinc-900/50 border border-zinc-800 p-8 rounded-2xl hover:border-zinc-600 transition-colors duration-300">
+                    <h3 class="text-zinc-400 text-sm uppercase tracking-wide mb-2">IELTS Band</h3>
+                    <p class="text-5xl font-bold text-white">7.5<span class="text-2xl text-zinc-500">/9.0</span></p>
+                </div>
+            </div>
+
+             <div class="mt-6 bg-zinc-900/30 border border-zinc-800 p-8 rounded-2xl">
+                <h3 class="text-xl font-semibold mb-4 text-white">Relevant Coursework</h3>
+                <div class="flex flex-wrap gap-3">
+                    <span class="px-3 py-1 bg-zinc-800 rounded-md text-sm text-zinc-300 border border-zinc-700">C++</span>
+                    <span class="px-3 py-1 bg-zinc-800 rounded-md text-sm text-zinc-300 border border-zinc-700">Java</span>
+                    <span class="px-3 py-1 bg-zinc-800 rounded-md text-sm text-zinc-300 border border-zinc-700">Python</span>
+                    <span class="px-3 py-1 bg-zinc-800 rounded-md text-sm text-zinc-300 border border-zinc-700">HTML</span>
+                    <span class="px-3 py-1 bg-zinc-800 rounded-md text-sm text-zinc-300 border border-zinc-700">CSS</span>
+                    <span class="px-3 py-1 bg-zinc-800 rounded-md text-sm text-zinc-300 border border-zinc-700">Javascript</span>
+                    <span class="px-3 py-1 bg-zinc-800 rounded-md text-sm text-zinc-300 border border-zinc-700">ITPEC</span>
+                    <span class="px-3 py-1 bg-zinc-800 rounded-md text-sm text-zinc-300 border border-zinc-700">Microbit</span>
+                    <span class="px-3 py-1 bg-zinc-800 rounded-md text-sm text-zinc-300 border border-zinc-700">Arduino</span>
+                    <span class="px-3 py-1 bg-zinc-800 rounded-md text-sm text-zinc-300 border border-zinc-700">Unity</span>
+                    <span class="px-3 py-1 bg-zinc-800 rounded-md text-sm text-zinc-300 border border-zinc-700">CNC Machine</span>
+                    <span class="px-3 py-1 bg-zinc-800 rounded-md text-sm text-zinc-300 border border-zinc-700">Cyber Security</span>
+                    <span class="px-3 py-1 bg-zinc-800 rounded-md text-sm text-zinc-300 border border-zinc-700">Adobe Photoshop</span>
+                    <span class="px-3 py-1 bg-zinc-800 rounded-md text-sm text-zinc-300 border border-zinc-700">Adobe Illustrator</span>
+                    <span class="px-3 py-1 bg-zinc-800 rounded-md text-sm text-zinc-300 border border-zinc-700">Figma</span>
+                    <span class="px-3 py-1 bg-zinc-800 rounded-md text-sm text-zinc-300 border border-zinc-700">Davinci Resolve</span>
+                    <span class="px-3 py-1 bg-zinc-800 rounded-md text-sm text-zinc-300 border border-zinc-700">Google Stitch</span>
+                    <span class="px-3 py-1 bg-zinc-800 rounded-md text-sm text-zinc-300 border border-zinc-700">Blender</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-24 bg-black border-t border-zinc-900">
+        <div class="max-w-5xl mx-auto px-4">
+            <div class="flex justify-between items-end mb-12">
+                <h2 class="text-3xl font-bold tracking-tight text-white">Featured Projects</h2>
+                <a href="#" class="text-sm text-zinc-400 hover:text-white underline underline-offset-4">View Github -></a>
+            </div>
+
+            <div class="space-y-8">
+                <div class="group relative grid grid-cols-1 md:grid-cols-12 gap-8 items-center border-b border-zinc-800 pb-8">
+                    <div class="md:col-span-8">
+                        <h3 class="text-2xl font-bold text-white group-hover:text-zinc-300 transition-colors">EcoTrack App</h3>
+                        <p class="mt-2 text-zinc-400 leading-relaxed">
+                            Developed a mobile application using React Native that helps students track their carbon footprint. Implemented a leaderboard system used by 500+ students at my high school.
+                        </p>
+                        <div class="flex gap-3 mt-4">
+                            <span class="text-xs text-zinc-500 border border-zinc-800 px-2 py-1 rounded bg-zinc-900">React Native</span>
+                            <span class="text-xs text-zinc-500 border border-zinc-800 px-2 py-1 rounded bg-zinc-900">Firebase</span>
+                        </div>
+                    </div>
+                    <div class="md:col-span-4 text-right hidden md:block">
+                        <span class="text-6xl font-bold text-zinc-900 group-hover:text-zinc-800 transition-colors">01</span>
+                    </div>
+                </div>
+
+                <div class="group relative grid grid-cols-1 md:grid-cols-12 gap-8 items-center border-b border-zinc-800 pb-8">
+                    <div class="md:col-span-8">
+                        <h3 class="text-2xl font-bold text-white group-hover:text-zinc-300 transition-colors">Robotics Team Lead</h3>
+                        <p class="mt-2 text-zinc-400 leading-relaxed">
+                            Led a team of 15 students to the State Finals. Programmed autonomous pathing algorithms in Java and managed the engineering notebook documentation.
+                        </p>
+                        <div class="flex gap-3 mt-4">
+                            <span class="text-xs text-zinc-500 border border-zinc-800 px-2 py-1 rounded bg-zinc-900">Java</span>
+                            <span class="text-xs text-zinc-500 border border-zinc-800 px-2 py-1 rounded bg-zinc-900">Leadership</span>
+                        </div>
+                    </div>
+                    <div class="md:col-span-4 text-right hidden md:block">
+                        <span class="text-6xl font-bold text-zinc-900 group-hover:text-zinc-800 transition-colors">02</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="py-20 border-t border-zinc-800 bg-zinc-950">
+        <div class="max-w-5xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6 text-white">Let's Connect</h2>
+            <p class="text-zinc-400 mb-8 max-w-md mx-auto">
+                Currently accepting university interviews. Feel free to reach out for my full CV or references.
+            </p>
+            <a href="mailto:your.email@example.com" class="inline-block px-8 py-4 border border-zinc-700 rounded-full hover:bg-white hover:text-black transition-all duration-300 text-lg font-medium text-white">
+                chinguun2023@gmail.com
+            </a>
+
+            <div class="flex justify-center mt-10 space-x-5">
+                <a href="https://www.facebook.com/nenuk.rc">
+                    <i class="fa-brands fa-facebook" style="font-size: 2rem; width: 2rem; height: 2rem; color: #c2c2c2; transition: color 0.2s;" aria-hidden="true" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#c2c2c2'"></i>
+                </a>
+                <a href="https://www.instagram.com/xenon1101001">
+                    <i class="fa-brands fa-instagram" style="font-size: 2rem; width: 2rem; height: 2rem; color: #c2c2c2; transition: color 0.2s;" aria-hidden="true" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#c2c2c2'"></i>
+                </a>
+                <a href="https://steamcommunity.com/profiles/76561199519086462">
+                    <i class="fa-brands fa-steam" style="font-size: 2rem; width: 2rem; height: 2rem; color: #c2c2c2; transition: color 0.2s;" aria-hidden="true" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#c2c2c2'"></i>
+                </a>
+                <a href="https://www.youtube.com/@XEnon1101">
+                    <i class="fa-brands fa-youtube mr-2" style="font-size: 2rem; width: 2rem; height: 2rem; color: #c2c2c2; transition: color 0.2s;" aria-hidden="true" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#c2c2c2'"></i>
+                </a>
+                <a href="https://www.reddit.com/user/Top_University_167/">
+                    <i class="fa-brands fa-reddit" style="font-size: 2rem; width: 2rem; height: 2rem; color: #c2c2c2; transition: color 0.2s;" aria-hidden="true" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#c2c2c2'"></i>
+                </a>
+                <a href="https://www.reddit.com/user/Top_University_167">
+                    <i class="fa-brands fa-tiktok" style="font-size: 2rem; width: 2rem; height: 2rem; color: #c2c2c2; transition: color 0.2s;" aria-hidden="true" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#c2c2c2'"></i>
+                </a>
+            </div>
+
+            <p class="mt-20 text-zinc-700 text-sm">© 2025 Chinguun. Built for University Application.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
